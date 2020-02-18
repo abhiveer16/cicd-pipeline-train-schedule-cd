@@ -25,7 +25,7 @@ pipeline {
                                     encryptedPassphrase: "$USERPASS"
                                 ],
                                 transfers: [
-                                    sshtransfer(
+                                    sshTransfer(
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
@@ -57,7 +57,7 @@ pipeline {
                                     encryptedPassphrase: "$USERPASS"
                                 ],
                                 transfers: [
-                                    sshtransfer(
+                                    sshTransfer(
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
